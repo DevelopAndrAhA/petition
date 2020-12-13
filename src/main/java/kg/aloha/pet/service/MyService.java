@@ -139,8 +139,15 @@ public class MyService {
 //    ============================================================
 //    ============================================================
 //    ============================================================
+    public void updatePrezident(Prezident prezident){
+        String sql = "UPDATE Prezident p set p.photo="+prezident.getPhoto()+" where p.p_id ="+prezident.getP_id();
+        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery(sql);
+        sqlQuery.executeUpdate();
+    }
 
-
+//    ============================================================
+//    ============================================================
+//    ============================================================
 
     public List searchDep(String fio){
         Criteria criteria = session.getCurrentSession().createCriteria(Deputat.class);

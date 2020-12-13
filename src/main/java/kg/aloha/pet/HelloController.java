@@ -237,6 +237,7 @@ public class HelloController {
 		return "{\"save\":\"success\"}";
 	}
 
+
 	@ResponseBody
 	@RequestMapping(value = "saveGolosAct",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
 	public Object saveGolos(@RequestBody Golos golos,@RequestBody Golos_minus golos_minus){
@@ -295,8 +296,23 @@ public class HelloController {
 	}
 	@ResponseBody
 	@RequestMapping(value = "saveImushestvo",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveImushestvo(@RequestBody Imushestvo imushestvo){
-		imushestvo  = service.save(imushestvo);
+	public Object saveImushestvo(@RequestBody Imushestvo imushestvo) {
+		imushestvo = service.save(imushestvo);
 		return imushestvo;
+	}
+
+
+
+
+//    ============================================================
+//    ============================================================
+//    ============================================================
+
+
+	@ResponseBody
+	@RequestMapping(value = "updatePrezident",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
+	public Object updatePrezident(@RequestBody Prezident prezidents){
+		service.updatePrezident(prezidents);
+		return "{\"update\":\"success\"}";
 	}
 }
