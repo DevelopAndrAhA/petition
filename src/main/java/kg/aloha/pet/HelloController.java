@@ -232,7 +232,8 @@ public class HelloController {
 	}
 	@ResponseBody
 	@RequestMapping(value = "savePrezident",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object savePrezident(List<Prezident> prezidents){
+	public Object savePrezident(Object o){
+		List<Prezident> prezidents = (List) o;
 		service.save(prezidents);
 		return "{\"save\":\"success\"}";
 	}
