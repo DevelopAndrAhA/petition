@@ -16,7 +16,7 @@ public class Prezident {
     private String fio;
     @Column(length = 15)
     private String birth_date;
-    private int age;
+    private String age;
     @Column(length = 10)
     private String male;
     @Column(length = 100)
@@ -57,11 +57,11 @@ public class Prezident {
         this.birth_date = birth_date;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 

@@ -232,9 +232,9 @@ public class HelloController {
 	}
 	@ResponseBody
 	@RequestMapping(value = "savePrezident",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object savePrezident(Prezident prezident){
-		prezident  = service.save(prezident);
-		return prezident;
+	public Object savePrezident(List<Prezident> prezidents){
+		service.save(prezidents);
+		return "{\"save\":\"success\"}";
 	}
 
 	@ResponseBody

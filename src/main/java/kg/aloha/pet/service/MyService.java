@@ -69,6 +69,9 @@ public class MyService {
         session.getCurrentSession().save(prezident);
         return prezident;
     }
+    public void save(List<Prezident> prezidents){
+        session.getCurrentSession().save(prezidents);
+    }
     public Address save(Address address){
         session.getCurrentSession().save(address);
         return address;
