@@ -70,18 +70,20 @@ public class MyService {
         return prezident;
     }
     public void save(List<Prezident> prezidents){
-        Session session1 = session.openSession();
-        Transaction transaction = session1.beginTransaction();
-        for(int i=0;i<prezidents.size();i++){
-            Prezident prezident = prezidents.get(i);
-            session1.save(prezident);
-            if(i%20==0){
-                session1.flush();
-                session1.clear();
+        try{
+            Session session1 = session.openSession();
+            Transaction transaction = session1.beginTransaction();
+            for(int i=0;i<prezidents.size();i++){
+                Prezident prezident = prezidents.get(i);
+                session1.save(prezident);
+                if(i%20==0){
+                    session1.flush();
+                    session1.clear();
+                }
             }
-        }
-        transaction.commit();
-        session1.close();
+            transaction.commit();
+            session1.close();
+        }catch (Exception e){e.printStackTrace();}
     }
     public Address save(Address address){
         session.getCurrentSession().save(address);

@@ -214,79 +214,67 @@ public class HelloController {
 
 	@ResponseBody
 	@RequestMapping(value = "saveAktivist",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveActivist(Aktivist aktivist){
+	public Object saveActivist(@RequestBody Aktivist aktivist){
 		aktivist  = service.save(aktivist);
 		return aktivist;
 	}
 	@ResponseBody
 	@RequestMapping(value = "saveProfession",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveProfession(Profession profession){
+	public Object saveProfession(@RequestBody  Profession profession){
 		profession  = service.save(profession);
 		return profession;
 	}
 	@ResponseBody
 	@RequestMapping(value = "saveProfession_Count",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveProfession_Count(Profession_Count profession_count){
+	public Object saveProfession_Count(@RequestBody  Profession_Count profession_count){
 		profession_count  = service.save(profession_count);
 		return profession_count;
 	}
 	@ResponseBody
 	@RequestMapping(value = "savePrezident",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object savePrezident(JSONArray jsonArray){
-		List<Prezident> prezidents =new ArrayList<>();
-		for(int i =0;i<jsonArray.length();i++){
-			Prezident prezident = new Prezident();
-			JSONObject jsonObject = jsonArray.getJSONObject(i);
-			prezident.setNation(jsonObject.getString("nation"));
-			prezident.setBirth_date(jsonObject.getString("fio"));
-			prezident.setAge(jsonObject.getString("age"));
-			prezident.setMale(jsonObject.getString("male"));
-			prezident.setStatus(jsonObject.getString("status"));
-			prezidents.add(prezident);
-		}
-
+	public Object savePrezident(@RequestBody List<Prezident> prezidents){
 		service.save(prezidents);
 		return "{\"save\":\"success\"}";
 	}
 
 	@ResponseBody
 	@RequestMapping(value = "saveGolosAct",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveGolos(Golos golos,Golos_minus golos_minus){
+	public Object saveGolos(@RequestBody Golos golos,@RequestBody Golos_minus golos_minus){
 		golos  = service.saveGolosAct(golos, golos_minus);
 		return golos;
 	}
 
 	@ResponseBody
 	@RequestMapping(value = "saveGolos_minusAct",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveGolos_minus(Golos_minus golos_minus,Golos golos){
+	public Object saveGolos_minus(@RequestBody Golos_minus golos_minus,@RequestBody Golos golos){
 		golos_minus  = service.saveGolosMinusAct(golos_minus, golos);
 		return golos_minus;
 	}
 
 	@ResponseBody
 	@RequestMapping(value = "saveGolosDep",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveGolosDep(Golos golos,Golos_minus golos_minus){
+	public Object saveGolosDep(@RequestBody Golos golos,@RequestBody Golos_minus golos_minus){
 		golos  = service.saveGolosDep(golos, golos_minus);
 		return golos;
 	}
 
 	@ResponseBody
 	@RequestMapping(value = "saveGolos_minusDep",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveGolos_minusDep(Golos_minus golos_minus,Golos golos){
+	public Object saveGolos_minusDep(@RequestBody Golos_minus golos_minus,@RequestBody Golos golos){
 		golos_minus  = service.saveGolosMinusDep(golos_minus, golos);
 		return golos_minus;
 	}
 
 	@ResponseBody
 	@RequestMapping(value = "saveGolosPrezident",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveGolosPrezident(Golos golos,Golos_minus golos_minus){
+	public Object saveGolosPrezident(@RequestBody Golos golos,@RequestBody Golos_minus golos_minus){
 		golos  = service.saveGolosPrezident(golos, golos_minus);
 		return golos;
 	}
 
 	@ResponseBody
 	@RequestMapping(value = "saveGolos_minusPrezident",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveGolos_minusPrezident(Golos_minus golos_minus,Golos golos){
+	public Object saveGolos_minusPrezident(@RequestBody Golos_minus golos_minus,@RequestBody Golos golos){
 		golos_minus  = service.saveGolosMinusPrezident(golos_minus, golos);
 		return golos_minus;
 	}
@@ -295,19 +283,19 @@ public class HelloController {
 
 	@ResponseBody
 	@RequestMapping(value = "saveAddress",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveAddress(Address address){
+	public Object saveAddress(@RequestBody Address address){
 		address  = service.save(address);
 		return address;
 	}
 	@ResponseBody
 	@RequestMapping(value = "saveFamily",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveFamily(Family family){
+	public Object saveFamily(@RequestBody Family family){
 		family  = service.save(family);
 		return family;
 	}
 	@ResponseBody
 	@RequestMapping(value = "saveImushestvo",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveImushestvo(Imushestvo imushestvo){
+	public Object saveImushestvo(@RequestBody Imushestvo imushestvo){
 		imushestvo  = service.save(imushestvo);
 		return imushestvo;
 	}

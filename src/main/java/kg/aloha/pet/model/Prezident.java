@@ -14,10 +14,10 @@ public class Prezident {
     private String photo;
     @Column(length = 150)
     private String fio;
-    @Column(length = 15)
+    @Column(length = 30)
     private String birth_date;
     private String age;
-    @Column(length = 10)
+    @Column(length = 15)
     private String male;
     @Column(length = 100)
     private String nation;
