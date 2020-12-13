@@ -232,8 +232,19 @@ public class HelloController {
 	}
 	@ResponseBody
 	@RequestMapping(value = "savePrezident",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object savePrezident(Object o){
-		List<Prezident> prezidents = (List) o;
+	public Object savePrezident(JSONArray jsonArray){
+		List<Prezident> prezidents =new ArrayList<>();
+		for(int i =0;i<jsonArray.length();i++){
+			Prezident prezident = new Prezident();
+			JSONObject jsonObject = jsonArray.getJSONObject(i);
+			prezident.setNation(jsonObject.getString("nation"));
+			prezident.setBirth_date(jsonObject.getString("fio"));
+			prezident.setAge(jsonObject.getString("age"));
+			prezident.setMale(jsonObject.getString("male"));
+			prezident.setStatus(jsonObject.getString("status"));
+			prezidents.add(prezident);
+		}
+
 		service.save(prezidents);
 		return "{\"save\":\"success\"}";
 	}
