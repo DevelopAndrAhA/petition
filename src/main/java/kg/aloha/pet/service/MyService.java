@@ -35,19 +35,18 @@ public class MyService {
         return frakciya;
     }
     public boolean save(ArrayList<Deputat> arrayList){
-//        Session session1 = session.openSession();
-//        Transaction transaction = session1.beginTransaction();
+        Session session1 = session.openSession();
+        Transaction transaction = session1.beginTransaction();
         for(int i=0;i<arrayList.size();i++){
             Deputat deputat = arrayList.get(i);
-            session.getCurrentSession().save(deputat);
-            /*session1.save(deputat);
+            session1.save(deputat);
             if(i%20==0){
                 session1.flush();
                 session1.clear();
-            }*/
+            }
         }
-//        transaction.commit();
-//        session1.close();
+        transaction.commit();
+        session1.close();
         return true;
     }
 
