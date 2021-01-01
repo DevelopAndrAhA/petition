@@ -65,8 +65,8 @@
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/model/Imushestvo.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/model/Prezident.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/HelloController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java" />
       </list>
     </option>
   </component>
@@ -118,7 +118,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -152,66 +152,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="petition-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="petition-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="petition-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="petition-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -271,39 +211,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="petition-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="petition-main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -694,11 +604,13 @@
       <workItem from="1607857484345" duration="226000" />
       <workItem from="1607876755971" duration="4428000" />
       <workItem from="1607881589275" duration="358000" />
+      <workItem from="1609175238596" duration="9000" />
+      <workItem from="1609518325246" duration="160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55530000" />
+    <option name="totallyTimeSpent" value="55699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -799,13 +711,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/peerjs.min.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="515">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp">
@@ -918,7 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15833333" vertical-offset="224" max-vertical-offset="1105">
           <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,10 +841,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6783555" vertical-offset="3417" max-vertical-offset="6205">
+          <caret line="251" column="79" selection-start-line="251" selection-start-column="79" selection-end-line="251" selection-end-column="79" />
+          <folding>
+            <marker date="1609518487433" expanded="true" signature="-1:-1" placeholder="UPDATE Prezi..." />
+            <marker date="1609518487433" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
+            <marker date="1609518487433" expanded="true" signature="-1:-1" placeholder="select count..Golos_minus..." />
+            <marker date="1609518487433" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
+            <marker date="1609518487433" expanded="true" signature="-1:-1" placeholder="select count..Golos_minus..." />
+            <marker date="1609518487433" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
+            <marker date="1609518487433" expanded="true" signature="-1:-1" placeholder="select count..Golos_minus..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/aloha/pet/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6964286" vertical-offset="1948" max-vertical-offset="2788">
-          <caret line="308" column="66" selection-start-line="308" selection-start-column="66" selection-end-line="308" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.5619048" vertical-offset="4" max-vertical-offset="3145">
+          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
           <folding>
             <element signature="method#printWelcome#0;class#HelloController#0" expanded="false" />
             <element signature="method#uploadJsonConf#0;class#HelloController#0" expanded="false" />
@@ -950,22 +877,6 @@
             <element signature="method#saveActivist#0;class#HelloController#0" expanded="false" />
             <element signature="method#saveProfession#0;class#HelloController#0" expanded="false" />
             <element signature="method#saveProfession_Count#0;class#HelloController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23458283" vertical-offset="1608" max-vertical-offset="5882">
-          <caret line="123" column="30" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
-          <folding>
-            <marker date="1607881945686" expanded="true" signature="-1:-1" placeholder="UPDATE Prezi..." />
-            <marker date="1607881945686" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
-            <marker date="1607881945686" expanded="true" signature="-1:-1" placeholder="select count..Golos_minus..." />
-            <marker date="1607881945686" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
-            <marker date="1607881945686" expanded="true" signature="-1:-1" placeholder="select count..Golos_minus..." />
-            <marker date="1607881945686" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
-            <marker date="1607881945686" expanded="true" signature="-1:-1" placeholder="select count..Golos_minus..." />
           </folding>
         </state>
       </provider>

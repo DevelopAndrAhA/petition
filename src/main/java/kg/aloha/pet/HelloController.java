@@ -74,7 +74,28 @@ public class HelloController {
 		}
 		return null;
 	}
-
+	@ResponseBody
+	@RequestMapping(value = "getAllPrezident",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
+	public Object getAllPrezident(){
+		List list = service.getAllPrezident();
+		if(list!=null){
+			if(list.size()!=0){
+				return list;
+			}
+		}
+		return null;
+	}
+	@ResponseBody
+	@RequestMapping(value = "getAllAktivist",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
+	public Object getAllAktivist(){
+		List list = service.getAllAktivist();
+		if(list!=null){
+			if(list.size()!=0){
+				return list;
+			}
+		}
+		return null;
+	}
 
 	@ResponseBody
 	@RequestMapping(value = "search",method = RequestMethod.GET,produces = "application/json; charset=utf-8")

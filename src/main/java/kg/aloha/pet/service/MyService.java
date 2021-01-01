@@ -238,7 +238,26 @@ public class MyService {
         return null;
     }
 
-
+    public List getAllPrezident(){
+        Criteria criteria = session.getCurrentSession().createCriteria(Prezident.class);
+        List list =  criteria.list();
+        if(list!=null){
+            if(list.size()!=0){
+                return list;
+            }
+        }
+        return null;
+    }
+    public List getAllAktivist(){
+        Criteria criteria = session.getCurrentSession().createCriteria(Aktivist.class);
+        List list =  criteria.list();
+        if(list!=null){
+            if(list.size()!=0){
+                return list;
+            }
+        }
+        return null;
+    }
 
 
 
