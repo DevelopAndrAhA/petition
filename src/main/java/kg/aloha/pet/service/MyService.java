@@ -146,8 +146,8 @@ public class MyService {
                     System.out.println("=============================================");
                     System.out.println("=============================================");
                     System.out.println("=============================================");
-                    session.getCurrentSession().remove(golos1);
-                    System.out.println(golos1.toString());
+                     System.out.println("delete golos1 ");
+                    session.getCurrentSession().delete(golos1);
                     session.getCurrentSession().save(golos);
                     System.out.println(golos.toString());
                     System.out.println("=============================================");
