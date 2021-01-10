@@ -136,8 +136,8 @@ public class MyService {
         criteria.add(Restrictions.eq("p_id",golos.getP_id()));
         Golos golos1 = (Golos) criteria.uniqueResult();
         if(golos1!=null){
-            SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("delete from Golos_minus g where g.g_id="+golos1.getG_id());
-            sqlQuery.executeUpdate();
+            session.getCurrentSession().delete(golos1);
+            System.out.println("golos1.getG_id() : " + golos1.getG_id()+" || golos.g_id :"+golos.getG_id());
             session.getCurrentSession().save(golos);
         }else{
             session.getCurrentSession().save(golos);
