@@ -244,6 +244,7 @@ public class HelloController {
 	@ResponseBody
 	@RequestMapping(value = "saveGolosPrezident",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
 	public Object saveGolosPrezident(@RequestBody Golos golos){
+		service.deleteGolos(golos.getG_id());
 		golos  = service.saveGolosPrezident(golos);
 		return golos;
 	}

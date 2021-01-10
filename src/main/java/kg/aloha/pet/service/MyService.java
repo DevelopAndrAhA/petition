@@ -127,7 +127,7 @@ public class MyService {
 
 
     public void deleteGolos(long g_id){
-        String sql = "delete from golos t where t.g_id  = 246";
+        String sql = "delete from golos t where t.g_id  = "+g_id;
         SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery(sql);
         sqlQuery.executeUpdate();
     }
@@ -135,32 +135,7 @@ public class MyService {
 
 
     public Golos saveGolosPrezident(Golos golos){
-        Criteria criteria = session.getCurrentSession().createCriteria(Golos.class);
-        criteria.add(Restrictions.eq("u_id",golos.getU_id()));
-        criteria.add(Restrictions.eq("p_id",golos.getP_id()));
-        Golos golos1 = (Golos) criteria.uniqueResult();
-
-        if(golos1!=null){
-            golos1.setA_id(golos.getA_id());
-            golos1.setD_id(golos.getD_id());
-            golos1.setG_id(golos.getG_id());
-            golos1.setP_id(golos.getP_id());
-            golos1.setU_id(golos.getU_id());
-            try{
-                    System.out.println("=============================================");
-                    System.out.println("=============================================");
-                    System.out.println("=============================================");
-                     System.out.println("delete golos1 ");
-                    session.getCurrentSession().delete("golos",golos1);
-                    session.getCurrentSession().save(golos);
-                    System.out.println(golos.toString());
-                    System.out.println("=============================================");
-                    System.out.println("=============================================");
-                    System.out.println("=============================================");
-            }catch (Exception e){e.printStackTrace();}
-        }else{
-            session.getCurrentSession().save(golos);
-        }
+        session.getCurrentSession().save(golos);
         return golos;
     }
 
