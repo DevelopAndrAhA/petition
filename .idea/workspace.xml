@@ -7,96 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb666788-66d7-4245-9a1b-28725e35c2c7" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier.war" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\classes\kg\aloha\pet\HelloController.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\classes\kg\aloha\pet\model\Address.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\classes\kg\aloha\pet\model\Comment.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\classes\kg\aloha\pet\model\Deputat.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\classes\kg\aloha\pet\model\Family.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\classes\kg\aloha\pet\model\Frakciya.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\classes\kg\aloha\pet\model\Golos.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\classes\kg\aloha\pet\model\Imushestvo.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\classes\kg\aloha\pet\model\Pet_user.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\classes\kg\aloha\pet\model\Prezident.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\classes\kg\aloha\pet\model\model\Aktivist.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\classes\kg\aloha\pet\model\model\Profession.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\classes\kg\aloha\pet\model\model\Profession_Count.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\classes\kg\aloha\pet\service\MyService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\antlr-2.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\byte-buddy-1.8.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\c3p0-0.9.5.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\classmate-1.3.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\commons-fileupload-1.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\commons-io-2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\dom4j-2.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\hibernate-commons-annotations-5.0.4.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\hibernate-core-5.3.7.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\hibernate-jpa-2.1-api-1.0.2.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\jackson-annotations-2.9.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\jackson-core-2.9.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\jackson-core-asl-1.9.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\jackson-databind-2.9.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\jackson-mapper-asl-1.9.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\jandex-2.0.5.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\javassist-3.23.1-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\javax.activation-api-1.2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\javax.persistence-api-2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\jboss-logging-3.3.2.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\jboss-transaction-api_1.2_spec-1.1.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\json-20180813.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\mchange-commons-java-0.2.15.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\postgresql-42.2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\spring-aop-5.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\spring-beans-5.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\spring-context-5.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\spring-core-5.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\spring-expression-5.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\spring-jcl-5.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\spring-jdbc-5.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\spring-orm-5.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\spring-tx-5.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\spring-web-5.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\lib\spring-webmvc-5.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\mvc-dispatcher-servlet.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\pages\Peer.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\pages\hello.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\WEB-INF\web.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\css\bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\css\bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\css\bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\css\bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\css\bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\css\bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\css\mycss\hello.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\js\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\js\jquery-3.0.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\js\jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\js\npm.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\KgBishCourier\resources\js\peerjs.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\classes\kg\aloha\pet\HelloController.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\classes\kg\aloha\pet\model\Address.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\classes\kg\aloha\pet\model\Comment.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\classes\kg\aloha\pet\model\Deputat.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\classes\kg\aloha\pet\model\Family.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\classes\kg\aloha\pet\model\Frakciya.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\classes\kg\aloha\pet\model\Golos.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\classes\kg\aloha\pet\model\Imushestvo.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\classes\kg\aloha\pet\model\Pet_user.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\classes\kg\aloha\pet\model\Prezident.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\classes\kg\aloha\pet\model\model\Aktivist.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\classes\kg\aloha\pet\model\model\Profession.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\classes\kg\aloha\pet\model\model\Profession_Count.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\target\classes\kg\aloha\pet\service\MyService.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
     </list>
     <ignored path="Petition.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -152,8 +63,8 @@
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/model/Imushestvo.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/model/Prezident.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/HelloController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
       </list>
     </option>
   </component>
@@ -757,15 +668,15 @@
       <workItem from="1610100709865" duration="2464000" />
       <workItem from="1610295242807" duration="2397000" />
       <workItem from="1610298973320" duration="651000" />
-      <workItem from="1610301242910" duration="1757000" />
+      <workItem from="1610301242910" duration="1870000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64309000" />
+    <option name="totallyTimeSpent" value="64422000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -980,14 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79787236" vertical-offset="414" max-vertical-offset="1139">
-          <caret line="42" column="44" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5526992" vertical-offset="1842" max-vertical-offset="6341">
@@ -1022,6 +925,14 @@
             <element signature="method#saveImushestvo#0;class#HelloController#0" expanded="false" />
             <element signature="method#searchDeputat#0;class#HelloController#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.015957447" vertical-offset="312" max-vertical-offset="1139">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
