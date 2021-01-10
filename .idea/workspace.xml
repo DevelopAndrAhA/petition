@@ -669,12 +669,12 @@
       <workItem from="1610295242807" duration="2397000" />
       <workItem from="1610298973320" duration="651000" />
       <workItem from="1610301242910" duration="2625000" />
-      <workItem from="1610306830930" duration="576000" />
+      <workItem from="1610306830930" duration="1136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65753000" />
+    <option name="totallyTimeSpent" value="66313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
@@ -928,12 +928,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.62738097" vertical-offset="1530" max-vertical-offset="6358">
-          <caret line="138" column="55" selection-start-line="138" selection-start-column="55" selection-end-line="138" selection-end-column="55" />
+          <caret line="138" column="41" selection-start-line="138" selection-start-column="41" selection-end-line="138" selection-end-column="41" />
           <folding>
-            <marker date="1610307399724" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1610307399724" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
-            <marker date="1610307399724" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
-            <marker date="1610307399724" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
+            <marker date="1610307891466" expanded="true" signature="-1:-1" placeholder="delete FROM ..." />
+            <marker date="1610307891466" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1610307891466" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
+            <marker date="1610307891466" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
+            <marker date="1610307891466" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
           </folding>
         </state>
       </provider>
