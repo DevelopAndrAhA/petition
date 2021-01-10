@@ -57,4 +57,15 @@ public class Golos {
     public void setA_id(long a_id) {
         this.a_id = a_id;
     }
+
+    @Override
+    public String toString() {
+        return "Golos{" +
+                "g_id=" + g_id +
+                ", u_id=" + u_id +
+                ", p_id=" + p_id +
+                ", a_id=" + a_id +
+                ", d_id=" + d_id +
+                '}';
+    }
 }
