@@ -126,7 +126,11 @@ public class MyService {
 
 
 
-
+    public void deleteGolos(long g_id){
+        String sql = "delete from golos t where t.g_id  = 246";
+        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery(sql);
+        sqlQuery.executeUpdate();
+    }
 
 
 
@@ -147,7 +151,7 @@ public class MyService {
                     System.out.println("=============================================");
                     System.out.println("=============================================");
                      System.out.println("delete golos1 ");
-                    session.getCurrentSession().delete(golos1);
+                    session.getCurrentSession().delete("golos",golos1);
                     session.getCurrentSession().save(golos);
                     System.out.println(golos.toString());
                     System.out.println("=============================================");
