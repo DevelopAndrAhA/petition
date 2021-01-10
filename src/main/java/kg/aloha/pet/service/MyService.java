@@ -136,7 +136,7 @@ public class MyService {
         criteria.add(Restrictions.eq("p_id",golos.getP_id()));
         Golos golos1 = (Golos) criteria.uniqueResult();
         if(golos1!=null){
-            session.getCurrentSession().remove(golos);
+            session.getCurrentSession().remove(golos1);
             session.getCurrentSession().save(golos);
         }else{
             session.getCurrentSession().save(golos);
