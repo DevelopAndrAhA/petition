@@ -136,7 +136,8 @@ public class MyService {
         criteria.add(Restrictions.eq("p_id",golos.getP_id()));
         Golos golos1 = (Golos) criteria.uniqueResult();
         if(golos1!=null){
-            session.getCurrentSession().remove(golos1);
+            SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("delete from Golos_minus g where g.g_id="+golos1.getG_id());
+            sqlQuery.executeUpdate();
             session.getCurrentSession().save(golos);
         }else{
             session.getCurrentSession().save(golos);
@@ -172,7 +173,7 @@ public class MyService {
 
 
     public Golos saveGolosDep(Golos golos){
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("delete * from Golos_minus g where g.d_id = "+golos.getP_id()+" and g.u_id = "+golos.getU_id());
+        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("delete  from Golos_minus g where g.d_id = "+golos.getP_id()+" and g.u_id = "+golos.getU_id());
         sqlQuery.executeUpdate();
         session.getCurrentSession().save(golos);
         return golos;
