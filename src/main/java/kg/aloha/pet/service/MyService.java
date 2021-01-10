@@ -65,10 +65,6 @@ public class MyService {
         session.getCurrentSession().save(profession_count);
         return profession_count;
     }
-    public Prezident save(Prezident prezident){
-        session.getCurrentSession().save(prezident);
-        return prezident;
-    }
     public void save(List<Prezident> prezidents){
         try{
             Session session1 = session.openSession();
@@ -100,41 +96,86 @@ public class MyService {
 //    ============================================================
 //    ============================================================
 //    ============================================================
-    public Golos saveGolosAct(Golos golos,Golos_minus golos_minus){
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("delete * from Golos_minus g where g.a_id = "+golos_minus.getA_id()+" and g.u_id = "+golos_minus.getU_id());
-        sqlQuery.executeUpdate();
-        session.getCurrentSession().save(golos);
+    public Golos saveGolosAct(Golos golos ){
+        Criteria criteria = session.getCurrentSession().createCriteria(Golos.class);
+        criteria.add(Restrictions.eq("u_id", golos.getU_id()));
+        criteria.add(Restrictions.eq("a_id", golos.getP_id()));
+        Golos golos1 = (Golos) criteria.uniqueResult();
+        if(golos1!=null){
+            session.getCurrentSession().save(golos);
+        }else{
+            session.getCurrentSession().remove(golos);
+            session.getCurrentSession().save(golos);
+        }
         return golos;
     }
-    public Golos_minus saveGolosMinusAct(Golos_minus golos_minus,Golos golos){
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("delete * from Golos g where g.a_id = "+golos.getA_id()+" and g.u_id = "+golos.getU_id());
-        sqlQuery.executeUpdate();
-        session.getCurrentSession().save(golos_minus);
-        return golos_minus;
-    }
-    public Golos saveGolosPrezident(Golos golos,Golos_minus golos_minus){
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("delete * from Golos_minus g where g.p_id = "+golos_minus.getP_id()+" and g.u_id = "+golos_minus.getU_id());
-        sqlQuery.executeUpdate();
-        session.getCurrentSession().save(golos);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public Golos saveGolosPrezident(Golos golos){
+        Criteria criteria = session.getCurrentSession().createCriteria(Golos.class);
+        criteria.add(Restrictions.eq("u_id",golos.getU_id()));
+        criteria.add(Restrictions.eq("p_id",golos.getP_id()));
+        Golos golos1 = (Golos) criteria.uniqueResult();
+        if(golos1!=null){
+            session.getCurrentSession().save(golos);
+        }else{
+            session.getCurrentSession().remove(golos);
+            session.getCurrentSession().save(golos);
+        }
         return golos;
     }
-    public Golos_minus saveGolosMinusPrezident(Golos_minus golos_minus,Golos golos){
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("delete * from Golos g where g.p_id = "+golos.getP_id()+" and g.u_id = "+golos.getU_id());
-        sqlQuery.executeUpdate();
-        session.getCurrentSession().save(golos_minus);
-        return golos_minus;
-    }
-    public Golos saveGolosDep(Golos golos,Golos_minus golos_minus){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public Golos saveGolosDep(Golos golos){
         SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("delete * from Golos_minus g where g.d_id = "+golos.getP_id()+" and g.u_id = "+golos.getU_id());
         sqlQuery.executeUpdate();
         session.getCurrentSession().save(golos);
         return golos;
-    }
-    public Golos_minus saveGolosMinusDep(Golos_minus golos_minus,Golos golos){
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("delete * from Golos g where g.d_id = "+golos.getP_id()+" and g.u_id = "+golos.getU_id());
-        sqlQuery.executeUpdate();
-        session.getCurrentSession().save(golos_minus);
-        return golos_minus;
     }
 //    ============================================================
 //    ============================================================
@@ -149,10 +190,11 @@ public class MyService {
 //    ============================================================
 //    ============================================================
 
-    public List searchDep(String fio){
-        Criteria criteria = session.getCurrentSession().createCriteria(Deputat.class);
-        criteria.add(Restrictions.sqlRestriction("UPPER(fio) LIKE ?", "%"+fio.toUpperCase()+"%", StringType.INSTANCE));
-        List list =  criteria.list();
+
+
+    public List getGolos4Activist(long a_id){
+        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("select count(g.a_id) cnt,g.a_id from Golos g group by g.a_id");
+        List list =  sqlQuery.list();
         if(list!=null){
             if(list.size()!=0){
                 return list;
@@ -161,68 +203,33 @@ public class MyService {
         return null;
     }
 
-    public long getGolos4Activist(long a_id){
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("select count(a_id) cnt from Golos g where g.a_id = "
-                +a_id+" group by g.a_id");
-        Object obj =  sqlQuery.uniqueResult();
-        if(obj!=null){
-            return Long.valueOf(obj+"");
-        }
-        return 0;
-    }
 
-    public long getGolosMinus4Activist(long a_id){
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("select count(a_id) cnt from Golos_minus g where g.a_id = "
-                +a_id+" group by g.a_id");
-        Object obj =  sqlQuery.uniqueResult();
-        if(obj!=null){
-            return Long.valueOf(obj+"");
+
+
+    public List getGolos4Deputat(){
+        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("select count(g.d_id) cnt,g.p_id from Golos g group by g.d_id");
+        List list =  sqlQuery.list();
+        if(list!=null){
+            if(list.size()!=0){
+                return list;
+            }
         }
-        return 0;
+        return null;
     }
 
 
 
-    public long getGolos4Deputat(long d_id){
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("select count(d_id) cnt from Golos g where g.d_id = "
-                +d_id+" group by g.d_id");
-        Object obj =  sqlQuery.uniqueResult();
-        if(obj!=null){
-            return Long.valueOf(obj+"");
+    public List getGolos4Prezident(){
+        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("select count(g.p_id) cnt,g.p_id from Golos g group by g.p_id");
+        List list =  sqlQuery.list();
+        if(list!=null){
+            if(list.size()!=0){
+                return list;
+            }
         }
-        return 0;
+        return null;
     }
 
-    public long getGolosMinus4Deputat(long d_id){
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("select count(d_id) cnt from Golos_minus g where g.d_id = "
-                +d_id+" group by g.d_id");
-        Object obj =  sqlQuery.uniqueResult();
-        if(obj!=null){
-            return Long.valueOf(obj+"");
-        }
-        return 0;
-    }
-
-
-    public long getGolos4Prezident(long p_id){
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("select count(p_id) cnt from Golos g where g.p_id = "
-                +p_id+" group by g.p_id");
-        Object obj =  sqlQuery.uniqueResult();
-        if(obj!=null){
-            return Long.valueOf(obj+"");
-        }
-        return 0;
-    }
-
-    public long getGolosMinus4Prezident(long p_id){
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery("select count(p_id) cnt from Golos_minus g where g.p_id = "
-                +p_id+" group by g.p_id");
-        Object obj =  sqlQuery.uniqueResult();
-        if(obj!=null){
-            return Long.valueOf(obj+"");
-        }
-        return 0;
-    }
 
 
 
@@ -368,7 +375,17 @@ public class MyService {
 
 
 
-
+    public List searchDep(String fio){
+        Criteria criteria = session.getCurrentSession().createCriteria(Deputat.class);
+        criteria.add(Restrictions.sqlRestriction("UPPER(fio) LIKE ?", "%"+fio.toUpperCase()+"%", StringType.INSTANCE));
+        List list =  criteria.list();
+        if(list!=null){
+            if(list.size()!=0){
+                return list;
+            }
+        }
+        return null;
+    }
 
 
 

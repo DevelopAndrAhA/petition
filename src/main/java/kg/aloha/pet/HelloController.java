@@ -86,6 +86,17 @@ public class HelloController {
 		return null;
 	}
 	@ResponseBody
+	@RequestMapping(value = "getGolosPrezident",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
+	public Object getGolosPrezident(){
+		List list = service.getGolos4Prezident();
+		if(list!=null){
+			if(list.size()!=0){
+				return list;
+			}
+		}
+		return null;
+	}
+	@ResponseBody
 	@RequestMapping(value = "getAllAktivist",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
 	public Object getAllAktivist(){
 		List list = service.getAllAktivist();
@@ -97,56 +108,11 @@ public class HelloController {
 		return null;
 	}
 
-	@ResponseBody
-	@RequestMapping(value = "search",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
-	public Object searchDeputat(@RequestParam("fio")String fio){
-		JSONArray jsonArray = new JSONArray();
-		List list = service.searchDep(fio);
-		if(list!=null){
-			if(list.size()!=0){
-				for(int i=0;i<list.size();i++){
-					Deputat deputat = (Deputat)list.get(i);
-					JSONObject jsonObject = new JSONObject();
-					jsonObject.put("info",deputat.getInfo());
-					jsonObject.put("fio",deputat.getFio());
-					jsonObject.put("d_id",deputat.getD_id());
-					jsonObject.put("f_id",deputat.getF_id());
-					jsonObject.put("img",deputat.getPhoto());
-					jsonArray.put(i,jsonObject);
-				}
 
-			}
-		}
-		return jsonArray.toString();
-	}
-
-	@ResponseBody
-	@RequestMapping(value = "getRateAct",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
-	public Object getRatingAct(@RequestParam("id") long id){
-		String str = service.getGolos4Activist(id)+"";//количество плюсовых голосов
-		String str2 = service.getGolosMinus4Activist(id) + "";//количество минусовых голосов
-		return "{\"plus\":\""+str+"\",\"minus\":\""+str2+"\"}";
-	}
-
-	@ResponseBody
-	@RequestMapping(value = "getRateDep",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
-	public Object getRatingDep(@RequestParam("id") long id){
-		String str = service.getGolos4Deputat(id)+"";//количество плюсовых голосов
-		String str2 = service.getGolosMinus4Deputat(id)+"";//количество минусовых голосов
-		return "{\"plus\":\""+str+"\",\"minus\":\""+str2+"\"}";
-	}
-
-	@ResponseBody
-	@RequestMapping(value = "getRatePrezident",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
-	public Object getRatingPrezident(@RequestParam("id")long id){
-		String str = service.getGolos4Prezident(id)+"";//количество плюсовых голосов
-		String str2 = service.getGolosMinus4Prezident(id)+"";//количество минусовых голосов
-		return "{\"plus\":\""+str+"\",\"minus\":\""+str2+"\"}";
-	}
 
 
 	@ResponseBody
-	@RequestMapping(value = "getDepCommentsAct",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
+	@RequestMapping(value = "getCommentsAct",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
 	public Object getCommentsAct(@RequestParam("a_id")long a_id,@RequestParam("u_id")long u_id){
 		List list = service.getMyCommentsToAct(a_id, u_id);
 		List list2 = service.getAllCommentsToAct(a_id);
@@ -170,7 +136,7 @@ public class HelloController {
 
 
 	@ResponseBody
-	@RequestMapping(value = "getDepCommentsDep",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
+	@RequestMapping(value = "getCommentsDep",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
 	public Object getCommentsDep(@RequestParam("d_id")long d_id,@RequestParam("u_id")long u_id){
 		List list = service.getMyCommentsToDep(d_id,u_id);
 		List list2 = service.getAllCommentsToDep(d_id);
@@ -193,7 +159,7 @@ public class HelloController {
 	}
 
 	@ResponseBody
-	@RequestMapping(value = "getDepCommentsPrezident",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
+	@RequestMapping(value = "getCommentsPrezident",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
 	public Object getCommentsPrezident(@RequestParam("p_id")long p_id,@RequestParam("u_id")long u_id){
 		List list = service.getMyCommentsToPrezident(p_id, u_id);
 		List list2 = service.getAllCommentsToPrezident(p_id);
@@ -261,45 +227,27 @@ public class HelloController {
 
 	@ResponseBody
 	@RequestMapping(value = "saveGolosAct",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveGolos(@RequestBody Golos golos,@RequestBody Golos_minus golos_minus){
-		golos  = service.saveGolosAct(golos, golos_minus);
+	public Object saveGolos(@RequestBody Golos golos){
+		golos  = service.saveGolosAct(golos);
 		return golos;
-	}
-
-	@ResponseBody
-	@RequestMapping(value = "saveGolos_minusAct",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveGolos_minus(@RequestBody Golos_minus golos_minus,@RequestBody Golos golos){
-		golos_minus  = service.saveGolosMinusAct(golos_minus, golos);
-		return golos_minus;
 	}
 
 	@ResponseBody
 	@RequestMapping(value = "saveGolosDep",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveGolosDep(@RequestBody Golos golos,@RequestBody Golos_minus golos_minus){
-		golos  = service.saveGolosDep(golos, golos_minus);
+	public Object saveGolosDep(@RequestBody Golos golos){
+		golos  = service.saveGolosDep(golos);
 		return golos;
 	}
 
-	@ResponseBody
-	@RequestMapping(value = "saveGolos_minusDep",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveGolos_minusDep(@RequestBody Golos_minus golos_minus,@RequestBody Golos golos){
-		golos_minus  = service.saveGolosMinusDep(golos_minus, golos);
-		return golos_minus;
-	}
+
 
 	@ResponseBody
 	@RequestMapping(value = "saveGolosPrezident",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveGolosPrezident(@RequestBody Golos golos,@RequestBody Golos_minus golos_minus){
-		golos  = service.saveGolosPrezident(golos, golos_minus);
+	public Object saveGolosPrezident(@RequestBody Golos golos){
+		golos  = service.saveGolosPrezident(golos);
 		return golos;
 	}
 
-	@ResponseBody
-	@RequestMapping(value = "saveGolos_minusPrezident",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object saveGolos_minusPrezident(@RequestBody Golos_minus golos_minus,@RequestBody Golos golos){
-		golos_minus  = service.saveGolosMinusPrezident(golos_minus, golos);
-		return golos_minus;
-	}
 
 
 
@@ -330,10 +278,29 @@ public class HelloController {
 //    ============================================================
 
 
+
+
 	@ResponseBody
-	@RequestMapping(value = "updatePrezident",method = RequestMethod.POST,produces = "application/json; charset=utf-8")
-	public Object updatePrezident(@RequestBody Prezident prezidents){
-		service.updatePrezident(prezidents);
-		return "{\"update\":\"success\"}";
+	@RequestMapping(value = "search",method = RequestMethod.GET,produces = "application/json; charset=utf-8")
+	public Object searchDeputat(@RequestParam("fio")String fio){
+		JSONArray jsonArray = new JSONArray();
+		List list = service.searchDep(fio);
+		if(list!=null){
+			if(list.size()!=0){
+				for(int i=0;i<list.size();i++){
+					Deputat deputat = (Deputat)list.get(i);
+					JSONObject jsonObject = new JSONObject();
+					jsonObject.put("info",deputat.getInfo());
+					jsonObject.put("fio",deputat.getFio());
+					jsonObject.put("d_id",deputat.getD_id());
+					jsonObject.put("f_id",deputat.getF_id());
+					jsonObject.put("img",deputat.getPhoto());
+					jsonArray.put(i,jsonObject);
+				}
+
+			}
+		}
+		return jsonArray.toString();
 	}
+
 }
