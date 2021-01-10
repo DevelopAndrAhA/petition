@@ -7,8 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb666788-66d7-4245-9a1b-28725e35c2c7" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Altynbek\IdeaProjects\petition-main\src\main\java\kg\aloha\pet\model\Golos_minus.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/kg/aloha/pet/HelloController.java" afterPath="$PROJECT_DIR$/src/main/java/kg/aloha/pet/HelloController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java" afterPath="$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -66,8 +64,8 @@
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/model/Imushestvo.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/model/Prezident.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/HelloController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java" />
       </list>
     </option>
   </component>
@@ -119,6 +117,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -243,7 +242,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -639,12 +637,14 @@
       <workItem from="1609518325246" duration="160000" />
       <workItem from="1609518779713" duration="1341000" />
       <workItem from="1610100709865" duration="2464000" />
-      <workItem from="1610295242807" duration="1938000" />
+      <workItem from="1610295242807" duration="2397000" />
+      <workItem from="1610298973320" duration="651000" />
+      <workItem from="1610301242910" duration="671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61442000" />
+    <option name="totallyTimeSpent" value="63223000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
@@ -871,8 +871,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/aloha/pet/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15357143" vertical-offset="245" max-vertical-offset="2499">
-          <caret line="77" column="35" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
+        <state vertical-scroll-proportion="1.9547619" vertical-offset="194" max-vertical-offset="2499">
+          <caret line="244" column="47" selection-start-line="244" selection-start-column="29" selection-end-line="244" selection-end-column="47" />
           <folding>
             <element signature="method#printWelcome#0;class#HelloController#0" expanded="false" />
             <element signature="method#uploadJsonConf#0;class#HelloController#0" expanded="false" />
@@ -896,9 +896,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66071427" vertical-offset="2862" max-vertical-offset="6494">
-          <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.62023807" vertical-offset="1536" max-vertical-offset="6341">
+          <caret line="138" column="54" selection-start-line="138" selection-start-column="54" selection-end-line="138" selection-end-column="54" />
+          <folding>
+            <marker date="1610303871539" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
+            <marker date="1610303871539" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
+            <marker date="1610303871539" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
+          </folding>
         </state>
       </provider>
     </entry>

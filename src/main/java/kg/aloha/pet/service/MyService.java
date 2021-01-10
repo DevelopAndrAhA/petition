@@ -136,9 +136,9 @@ public class MyService {
         criteria.add(Restrictions.eq("p_id",golos.getP_id()));
         Golos golos1 = (Golos) criteria.uniqueResult();
         if(golos1!=null){
+            session.getCurrentSession().remove(golos);
             session.getCurrentSession().save(golos);
         }else{
-            session.getCurrentSession().remove(golos);
             session.getCurrentSession().save(golos);
         }
         return golos;
@@ -177,15 +177,6 @@ public class MyService {
         session.getCurrentSession().save(golos);
         return golos;
     }
-//    ============================================================
-//    ============================================================
-//    ============================================================
-    public void updatePrezident(Prezident prezident){
-        String sql = "UPDATE Prezident p set p.photo="+prezident.getPhoto()+" where p.p_id ="+prezident.getP_id();
-        SQLQuery sqlQuery = session.getCurrentSession().createSQLQuery(sql);
-        sqlQuery.executeUpdate();
-    }
-
 //    ============================================================
 //    ============================================================
 //    ============================================================
