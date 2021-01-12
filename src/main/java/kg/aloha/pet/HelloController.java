@@ -30,7 +30,7 @@ public class HelloController {
 	MyService service;
 
 	@ResponseBody
-	@RequestMapping(method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET,produces = "text/html; charset=utf-8")
 	public String printWelcome() {
 		OkHttpClient client = new OkHttpUtils().getInstance();
 
