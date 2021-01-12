@@ -1,10 +1,15 @@
 package kg.aloha.pet;
 
+import com.squareup.okhttp.MediaType;
+import com.squareup.okhttp.OkHttpClient;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.Response;
 import kg.aloha.pet.model.*;
 import kg.aloha.pet.model.model.Aktivist;
 import kg.aloha.pet.model.model.Profession;
 import kg.aloha.pet.model.model.Profession_Count;
 import kg.aloha.pet.service.MyService;
+import kg.aloha.pet.service.OkHttpUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,10 +29,24 @@ public class HelloController {
 	@Autowired
 	MyService service;
 
-
+	@ResponseBody
 	@RequestMapping(method = RequestMethod.GET)
-	public String printWelcome(ModelMap model) {
-		model.addAttribute("message", "Hello world!");
+	public String printWelcome() {
+		OkHttpClient client = new OkHttpUtils().getInstance();
+
+
+		//com.squareup.okhttp.RequestBody body = com.squareup.okhttp.RequestBody.create(MediaType.parse("application/json; charset=utf-8"), jsonToSend);
+        Request request = new Request.Builder()
+                .url("http://sasisa.ru/")
+						//.post(body)
+                .build();
+        try{
+            Response response = client.newCall(request).execute();
+            String s = response.body().string();
+            System.out.println(s);
+			return s;
+        }catch (Exception e){e.printStackTrace();}
+
 		return "hello";
 		//return "Peer";
 	}

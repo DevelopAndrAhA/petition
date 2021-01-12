@@ -7,8 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb666788-66d7-4245-9a1b-28725e35c2c7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp_okhttp_2_7_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_6_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/OkHttpUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/kg/aloha/pet/HelloController.java" afterPath="$PROJECT_DIR$/src/main/java/kg/aloha/pet/HelloController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java" afterPath="$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Petition.iml" afterPath="$PROJECT_DIR$/Petition.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Petition_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Petition_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Petition.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,7 +52,6 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/model/model/Profession_Count.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/model/User.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/hello.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/model/Frakciya.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/Rating.java" />
@@ -64,8 +69,10 @@
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/model/Prezident.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/model/Golos.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/HelloController.java" />
         <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/OkHttpUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kg/aloha/pet/HelloController.java" />
       </list>
     </option>
   </component>
@@ -117,6 +124,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -272,7 +280,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,6 +299,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Altynbek\IdeaProjects\petition-main\src\main\java\kg\aloha\pet\service" />
       <recent name="C:\Users\99670\IdeaProjects\Petition\src\main\webapp\resources\js" />
       <recent name="C:\Users\99670\IdeaProjects\Petition\src\main\webapp\WEB-INF\pages" />
       <recent name="C:\Users\99670\IdeaProjects\Petition\src\main\webapp" />
@@ -670,20 +678,41 @@
       <workItem from="1610295242807" duration="2397000" />
       <workItem from="1610298973320" duration="651000" />
       <workItem from="1610301242910" duration="2625000" />
-      <workItem from="1610306830930" duration="3335000" />
+      <workItem from="1610306830930" duration="4021000" />
+      <workItem from="1610474352062" duration="329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68512000" />
+    <option name="totallyTimeSpent" value="69527000" />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -855,13 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8226221" vertical-offset="1465" max-vertical-offset="2992">
-          <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/aloha/pet/model/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44523808" vertical-offset="119" max-vertical-offset="1156">
@@ -904,24 +926,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/MyService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12142857" vertical-offset="1683" max-vertical-offset="6256">
-          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding>
-            <marker date="1610310172133" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1610310172133" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1610310172133" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
-            <marker date="1610310172133" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
-            <marker date="1610310172133" expanded="true" signature="-1:-1" placeholder="select count..Golos..." />
-          </folding>
+        <state vertical-scroll-proportion="0.46028882" vertical-offset="1632" max-vertical-offset="6256">
+          <caret line="128" column="22" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44166666" vertical-offset="1312" max-vertical-offset="3060">
+          <caret line="99" column="21" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kg/aloha/pet/service/OkHttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28333333" vertical-offset="0" max-vertical-offset="840">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kg/aloha/pet/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7202381" vertical-offset="1265" max-vertical-offset="2516">
-          <caret line="246" column="45" selection-start-line="246" selection-start-column="45" selection-end-line="246" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.24285714" vertical-offset="0" max-vertical-offset="2822">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
           <folding>
-            <element signature="method#printWelcome#0;class#HelloController#0" expanded="false" />
             <element signature="method#uploadJsonConf#0;class#HelloController#0" expanded="false" />
             <element signature="method#getAllDeputat#0;class#HelloController#0" expanded="false" />
             <element signature="method#getAllAktivist#0;class#HelloController#0" expanded="false" />
